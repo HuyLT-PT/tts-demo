@@ -1,7 +1,8 @@
 {
   "type": "module",
   "scripts": {
-    "start": "node --loader ts-node/esm index.ts"
+    "build": "tsc",
+    "start": "npm run build && node dist/index.js"
   },
   "devDependencies": {
     "@types/wav": "^1.0.4",
@@ -10,7 +11,10 @@
   },
   "dependencies": {
     "@google/genai": "^1.0.0",
+    "@types/express": "^5.0.2",
     "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "express-rate-limit": "^7.5.0",
     "wav": "^1.0.2"
   }
 }
