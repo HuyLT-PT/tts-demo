@@ -1,0 +1,16 @@
+{
+  "type": "module",
+  "scripts": {
+    "start": "node --loader ts-node/esm index.ts"
+  },
+  "devDependencies": {
+    "@types/wav": "^1.0.4",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "@google/genai": "^1.0.0",
+    "dotenv": "^16.5.0",
+    "wav": "^1.0.2"
+  }
+}
